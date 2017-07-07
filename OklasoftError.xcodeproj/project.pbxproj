@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D05D3B481F0F20F30020627D /* OklasoftError.h in Headers */ = {isa = PBXBuildFile; fileRef = D05D3B461F0F20F30020627D /* OklasoftError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D05D3B4F1F0F21210020627D /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05D3B4E1F0F21210020627D /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D05D3B431F0F20F30020627D /* OklasoftError.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OklasoftError.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05D3B461F0F20F30020627D /* OklasoftError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OklasoftError.h; sourceTree = "<group>"; };
 		D05D3B471F0F20F30020627D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D05D3B4E1F0F21210020627D /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				D05D3B461F0F20F30020627D /* OklasoftError.h */,
 				D05D3B471F0F20F30020627D /* Info.plist */,
+				D05D3B4E1F0F21210020627D /* Error.swift */,
 			);
 			path = OklasoftError;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					D05D3B421F0F20F30020627D = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05D3B4F1F0F21210020627D /* Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +252,7 @@
 		D05D3B4C1F0F20F30020627D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -261,6 +267,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.oklasoft.OklasoftError;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -268,6 +275,7 @@
 		D05D3B4D1F0F20F30020627D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
