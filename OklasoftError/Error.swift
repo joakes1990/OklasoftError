@@ -20,7 +20,7 @@ public struct oklasoftError: Error {
         self.localizedDescription = localizedDescription
     }
     
-    func toError() -> Error {
+    public func toError() -> Error {
         let newError: NSError = NSError(domain: domain,
                                         code: errorCode,
                                         userInfo: userInfo)
