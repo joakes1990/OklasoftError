@@ -23,7 +23,7 @@ public struct oklasoftError: Error {
     public func toError() -> Error {
         let newError: NSError = NSError(domain: domain,
                                         code: errorCode,
-                                        userInfo: userInfo)
+                                        userInfo: (userInfo as? [String:Any]) ?? ["":""])
         return newError as Error
     }
 }
